@@ -1,0 +1,101 @@
+.manage-my-profile-container {
+  width: 80%;
+  max-width: 900px;
+  margin: 40px auto;
+  padding: 40px;
+  background: rgb(225, 221, 221); 
+  border-radius: 12px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  border: none;
+  color: #333; 
+}
+
+.manage-my-profile-header {
+  margin-bottom: 30px;
+  font-size: 2.5em;
+  font-weight: bold;
+  text-align: center;
+  color: #0d0d0d; 
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3); 
+}
+
+.manage-my-profile-form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px; 
+}
+
+.manage-my-profile-form label {
+  font-size: 1.1em;
+  margin-bottom: 8px;
+  color: #050505; 
+  font-weight: 500;
+}
+
+.manage-my-profile-form input {
+  font-size: 1em;
+  padding: 12px 20px;
+  border: 1px solid #ff6f61; 
+  border-radius: 8px;
+  margin-bottom: 20px;
+  width: 100%;
+  background-color: #fff;
+  color: #333;
+  transition: all 0.3s ease-in-out; 
+}
+
+.manage-my-profile-form input:focus {
+  border-color: #ff9a8b; 
+  box-shadow: 0 0 8px rgba(255, 154, 139, 0.6); 
+}
+
+.manage-my-profile-form button {
+  font-size: 1.1em;
+  padding: 12px 24px;
+  border: none;
+  border-radius: 8px;
+  background-color: #f64434;
+  color: white;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  width: 100%;
+}
+
+.manage-my-profile-form button:hover {
+  background-color: #ac1c0f; 
+  transform: scale(1.05); 
+}
+.manage-my-profile-form p {
+  margin: 10px 0;
+  padding: 10px;
+  font-size: 1.1em;
+  color: white;
+  border-radius: 5px;
+}
+
+.error-message {
+  background-color: #f44336; 
+}
+
+.success-message {
+  background-color: #4caf50; 
+}
+
+@media (max-width: 768px) {
+  .manage-my-profile-container {
+    width: 90%;
+    padding: 30px;
+  }
+
+  .manage-my-profile-header {
+    font-size: 2em; 
+  }
+
+  .manage-my-profile-form input {
+    padding: 10px; 
+  }
+
+  .manage-my-profile-form button {
+    padding: 10px 20px;
+  }
+}

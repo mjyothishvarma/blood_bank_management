@@ -1,0 +1,81 @@
+.schedule-appointment-container {
+    width: 80%;
+    max-width: 600px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #ffffff; 
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border: 2px solid #e63946; 
+  }
+  
+  .schedule-appointment-container h2 {
+    font-size: 2em;
+    margin-bottom: 20px;
+    color: #e63946; 
+  }
+  .error-message {
+    color: red;
+    font-size: 1rem;
+    margin-bottom: 10px;
+    text-align: center;
+  }
+  .success-message {
+    color: green;
+    font-size: 1rem;
+    margin-bottom: 10px;
+    text-align: center;
+  }
+  
+  .schedule-appointment-form {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .schedule-appointment-form .form-group {
+    margin-bottom: 15px;
+  }
+  
+  .schedule-appointment-form label {
+    font-size: 1em;
+    margin-bottom: 5px;
+    color: #333; 
+  }
+  
+  .schedule-appointment-form input,
+  .schedule-appointment-form select,
+  .schedule-appointment-form textarea {
+    font-size: 1em;
+    padding: 10px;
+    border: 1px solid #e63946; 
+    border-radius: 5px;
+    margin-bottom: 10px;
+    width: 100%;
+  }
+  
+  .schedule-appointment-form textarea {
+    resize: vertical;
+    min-height: 100px;
+  }
+  
+  .schedule-appointment-form button {
+    font-size: 1em;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    background-color: #e63946;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .schedule-appointment-form button:hover {
+    background-color: #d62839; 
+  }
+  
+  @media (max-width: 768px) {
+    .appointment-container {
+      width: 90%;
+    }
+  }
+  

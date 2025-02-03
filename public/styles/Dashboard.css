@@ -1,0 +1,13 @@
+.dashboard {
+    background-color: red;
+    padding: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .dashboard-logo img {
+    height: 60px;
+    width: auto;
+  }
+  

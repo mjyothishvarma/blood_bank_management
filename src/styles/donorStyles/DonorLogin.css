@@ -1,0 +1,55 @@
+.donor-login-container {
+  padding: 20px;
+  background-color: #333; 
+  max-width: 400px; 
+  margin: 50px auto;
+  border-radius: 8px; 
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); 
+}
+
+.donor-login-title {
+  color: #fff;
+  text-align: center;
+}
+
+.donor-login-form {
+  display: flex; 
+  flex-direction: column; 
+}
+
+.donor-login-input-label {
+  margin-bottom: 5px; 
+  color: #fff; 
+}
+
+.donor-login-input-field {
+  padding: 10px; 
+  margin-bottom: 15px; 
+  border: 1px solid #ccc; 
+  border-radius: 4px;
+  background-color: #fff;
+}
+
+.donor-login-submit-button {
+  padding: 10px; 
+  background-color: #8b0000;
+  color: white;
+  border: none; 
+  border-radius: 4px; 
+  cursor: pointer; 
+  transition: background-color 0.3s; 
+}
+
+.donor-login-submit-button:hover {
+  background-color: #a00000; 
+}
+
+.donor-login-error-message {
+  color: red;
+}
+
+.donor-login-forgot-password,
+.donor-login-create-account {
+  color: #fff; 
+  text-decoration: underline; 
+}

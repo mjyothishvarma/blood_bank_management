@@ -1,0 +1,114 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap');
+
+* {
+    margin: 0px;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+.recipient-outer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 90px;
+    padding: 40px 20px 80px 20px; 
+}
+
+.recipient-form {
+    width: 600px;
+    background-color: rgb(154, 16, 1);
+    color: white;
+    border-radius: 10px;
+    padding: 40px;
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.recipient-form h1 {
+    font-size: 36px;
+    text-align: center;
+    margin-bottom: 30px;
+    color: white;
+}
+
+.input-box {
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.input-box input, .input-box select, .input-box textarea {
+    width: 100%;
+    height: 45px;
+    background-color: transparent;
+    border: 2px solid rgba(255, 255, 255, 0.2);
+    border-radius: 25px;
+    padding: 0 20px;
+    font-size: 16px;
+    color: rgb(248, 250, 250);
+    outline: none;
+    transition: border-color 0.3s ease;
+}
+
+.input-box input:focus, .input-box select:focus, .input-box textarea:focus {
+    border-color: rgba(255, 255, 255, 0.8);
+}
+
+.input-box textarea {
+    height: auto;
+    border-radius: 15px;
+    padding: 10px;
+}
+
+.input-box select {
+    height: 45px;
+    background-color: transparent;
+    appearance: none;
+    padding-right: 40px; 
+    position: relative;
+}
+
+.input-box select::after {
+    content: '';
+    position: absolute;
+    right: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+    border-left: 5px solid transparent;
+    border-right: 5px solid transparent;
+    border-top: 6px solid rgba(255, 255, 255, 0.8);
+    pointer-events: none;
+}
+
+.input-box select option {
+    background-color: darkblue;
+    color: white;
+}
+
+.input-box input::placeholder, .input-box textarea::placeholder {
+    color: rgba(255, 255, 255, 0.8);
+}
+
+.recipient-form button {
+    width: 100%;
+    height: 45px;
+    background-color: white;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: 700;
+    color: darkblue;
+    transition: 0.3s;
+    margin-top: 20px;
+}
+
+.recipient-form button:hover {
+    background-color: rgba(255, 255, 255, 0.9);
+}
+
+.reclabel {
+    font-size: 14px;
+    color: rgba(255, 255, 255, 0.8);
+    margin-bottom: 5px;
+}

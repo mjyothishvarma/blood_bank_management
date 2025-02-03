@@ -1,0 +1,220 @@
+.donor-reg-details-container {
+  max-width: 600px;
+  margin: 50px ;
+  padding: 30px;
+  border: 1px solid #ddd;
+  border-radius: 15px;
+  background-color: #f3f4f6; 
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); 
+}
+
+.donor-reg-details-container h2 {
+  text-align: center;
+  color: #2d3436; 
+  font-size: 24px;
+  margin-bottom: 20px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.donor-reg-details-error,
+.donor-reg-details-success {
+  text-align: center;
+  font-weight: bold;
+  font-size: 16px;
+}
+
+.donor-reg-details-error {
+  color: #e74c3c; 
+}
+
+.donor-reg-details-success {
+  color: #2ecc71; 
+}
+
+.donor-reg-details-form {
+  display: flex;
+  flex-direction: column;
+}
+
+.donor-reg-details-group {
+  margin-bottom: 20px; 
+}
+
+.donor-reg-details-group label {
+  display: block;
+  font-weight: 600;
+  margin-bottom: 8px;
+  color: #2d3436;
+  font-size: 16px;
+}
+
+.donor-reg-details-group input[type="text"],
+.donor-reg-details-group input[type="email"],
+.donor-reg-details-group input[type="password"],
+.donor-reg-details-group input[type="number"],
+.donor-reg-details-group input[type="tel"],
+.donor-reg-details-group select,
+.donor-reg-details-group textarea {
+  width: 100%;
+  padding: 12px;
+  font-size: 16px;
+  border-radius: 8px; 
+  border: 1px solid #bdc3c7;
+  background-color: #ffffff;
+  transition: all 0.3s ease; 
+}
+
+.donor-reg-details-group input[type="text"]:focus,
+.donor-reg-details-group input[type="email"]:focus,
+.donor-reg-details-group input[type="password"]:focus,
+.donor-reg-details-group input[type="number"]:focus,
+.donor-reg-details-group input[type="tel"]:focus,
+.donor-reg-details-group select:focus,
+.donor-reg-details-group textarea:focus {
+  border-color: #3498db; 
+  box-shadow: 0 0 5px rgba(52, 152, 219, 0.5);
+}
+
+.donor-reg-details-submit {
+  padding: 12px 25px;
+  background-color: #30c71f; 
+  color: #fff;
+  font-size: 18px;
+  font-weight: 600;
+  border: none;
+  border-radius: 30px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  margin-top: 20px;
+}
+
+.donor-reg-details-submit:hover {
+  background-color: #0b670b; 
+  transform: translateY(-3px); 
+}
+
+.donor-reg-details-login-link {
+  text-align: center;
+  margin-top: 25px;
+}
+
+.donor-reg-details-login-link a {
+  color: #3498db;
+  font-size: 16px;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.donor-reg-details-group select {
+  background-color: #ffffff;
+}
+
+.donor-reg-details-group textarea {
+  resize: vertical;
+  background-color: #ffffff;
+  padding: 12px;
+}
+
+.donor-reg-details-login-link a:hover {
+  text-decoration: underline;
+  color: #2980b9; 
+}
+
+.donor-registration-container {
+  max-width: 550px;
+  margin: 0 auto;
+  padding: 30px;
+  border: 1px solid #ddd;
+  border-radius: 15px;
+  background-color: #ecf0f1; 
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.donor-registration-container h2 {
+  text-align: center;
+  color: #2d3436;
+  font-size: 24px;
+  margin-bottom: 25px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.donor-registration-error {
+  color: #e74c3c;
+  text-align: center;
+  font-weight: 600;
+}
+
+.donor-registration-form {
+  display: flex;
+  flex-direction: column;
+}
+
+.donor-registration-group {
+  margin-bottom: 20px;
+}
+
+.donor-registration-group label {
+  display: block;
+  font-weight: 600;
+  margin-bottom: 8px;
+  color: #2d3436;
+  font-size: 16px;
+}
+
+.donor-registration-group input[type="text"],
+.donor-registration-group input[type="password"] {
+  width: 100%;
+  padding: 12px;
+  font-size: 16px;
+  border-radius: 8px;
+  border: 1px solid #bdc3c7;
+  background-color: #fff;
+  transition: all 0.3s ease;
+}
+
+.donor-registration-group input[type="text"]:focus,
+.donor-registration-group input[type="password"]:focus {
+  border-color: #3498db;
+  box-shadow: 0 0 5px rgba(52, 152, 219, 0.5);
+}
+
+.donor-registration-submit {
+  padding: 12px 25px;
+  background-color: #3498db;
+  color: #fff;
+  font-size: 18px;
+  font-weight: 600;
+  border: none;
+  border-radius: 30px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  margin-top: 25px;
+}
+.donor-registration-submit:active {
+  background-color: #1f5a86;
+  transform: scale(0.98); 
+}
+
+
+.donor-registration-submit:hover {
+  background-color: #2980b9;
+  transform: translateY(-3px);
+}
+@media (max-width: 768px) {
+  .donor-registration-container {
+    padding: 20px;
+  }
+  .donor-registration-container h2 {
+    font-size: 22px;
+  }
+
+  .donor-registration-group input[type="text"],
+  .donor-registration-group input[type="password"] {
+    font-size: 14px;
+  }
+
+  .donor-registration-submit {
+    font-size: 14px;
+    padding: 10px 20px;
+  }
+}

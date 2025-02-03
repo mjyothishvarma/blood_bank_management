@@ -1,0 +1,19 @@
+.call-to-action {
+    text-align: center;
+    margin-top: 20px;
+  }
+  
+  .cta-button {
+    padding: 10px 20px;
+    font-size: 1.2rem;
+    background-color: red;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+  }
+  
+  .cta-button:hover {
+    background-color: darkred;
+  }
+  

@@ -1,0 +1,33 @@
+#empnav {
+    background-color: #333;
+    color: white;
+    padding: 1rem;
+    position: fixed; 
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+  }
+  
+  
+  #empnav ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+  }
+  
+  #empnav ul li {
+    display: inline;
+  }
+  
+  #empnav ul li a {
+    color: white;
+    text-decoration: none;
+    padding: 0.5rem;
+  }
+  
+  #empnav ul li a:hover {
+    background-color: #555;
+  }

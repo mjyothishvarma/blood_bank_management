@@ -1,0 +1,352 @@
+.eligibility-bg-container {
+  display: flex;
+  flex-direction: column;
+  max-width: 900px;
+  margin: 40px auto;
+  padding: 25px;
+  background-color: #1c1c1c;
+  border-radius: 15px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  color: #f0f0f0;
+  font-family: 'Arial', sans-serif;
+}
+
+
+.eligibility-section {
+  margin-bottom: 35px;
+  padding: 25px;
+  border-radius: 10px;
+  background-color: #222222;
+  transition: all 0.3s ease-in-out;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.eligibility-section:hover {
+  background-color: #7c3d3d; 
+  transform: scale(1.05); 
+  box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
+}
+
+
+.eligibility-section-header {
+  font-size: 2rem;
+  margin-bottom: 20px;
+  color: #dcbc1a;
+  font-weight: bold;
+  border-bottom: 3px solid #ffcc00;
+  padding-bottom: 12px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.eligibility-requirement-list,
+.eligibility-help-list {
+  list-style-type: none;
+  padding-left: 20px;
+  margin-bottom: 20px;
+  display: flex;
+  flex-direction: column;
+}
+
+.eligibility-requirement-list li,
+.eligibility-help-list li {
+  display: flex;
+  align-items: center;
+  position: relative;
+  margin-bottom: 15px;
+  font-size: 1.1rem;
+  line-height: 1.8;
+  color: #ccc;
+  padding-left: 30px;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+  font-weight: 500;
+}
+
+.eligibility-requirement-list li:before,
+.eligibility-help-list li:before {
+  content: "•";
+  font-size: 1.6rem;
+  color: #dcbc1a;
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+
+.eligibility-requirement-list li:hover,
+.eligibility-help-list li:hover {
+  color: #fff;
+  transform: translateX(10px);
+  background-color: #7c3d3d;
+  border-radius: 5px;
+  padding-left: 40px; 
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.15); 
+}
+
+
+.eligibility-requirement-list li {
+  opacity: 0;
+  transform: translateX(-50px);
+  animation: slide-in 0.6s forwards;
+}
+
+.eligibility-requirement-list li:nth-child(1) {
+  animation-delay: 0.1s;
+}
+
+.eligibility-requirement-list li:nth-child(2) {
+  animation-delay: 0.2s;
+}
+
+.eligibility-requirement-list li:nth-child(3) {
+  animation-delay: 0.3s;
+}
+
+@keyframes slide-in {
+  0% {
+    opacity: 0;
+    transform: translateX(-50px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+.eligibility-section-paragraph {
+  line-height: 1.8;
+  margin-bottom: 20px;
+  color: #ccc;
+  font-size: 1.1rem;
+  text-align: justify;
+}
+
+.eligibility-section {
+  background: linear-gradient(135deg, #2f2f2f 40%, #3e3e3e 100%);
+}
+
+.eligibility-cta-button {
+  display: inline-block;
+  background-color: #ffcc00;
+  color: #1c1c1c;
+  font-size: 1.2rem;
+  padding: 12px 25px;
+  margin-top: 20px;
+  text-align: center;
+  border-radius: 25px;
+  font-weight: bold;
+  text-transform: uppercase;
+  cursor: pointer;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+.eligibility-cta-button:hover {
+  background-color: #dcbc1a;
+  color: #fff;
+  transform: scale(1.05);
+}
+
+@media (max-width: 768px) {
+  .eligibility-bg-container {
+    padding: 15px;
+    max-width: 100%;
+  }
+
+  .eligibility-section {
+    padding: 15px;
+  }
+
+  .eligibility-section-header {
+    font-size: 1.5rem;
+  }
+
+  .eligibility-requirement-list li,
+  .eligibility-help-list li {
+    font-size: 1rem;
+  }
+
+  .eligibility-cta-button {
+    font-size: 1rem;
+    padding: 10px 20px;
+  }
+}
+
+/* Eligibility.css */
+
+
+.eligibility-bg-container {
+  display: flex;
+  flex-direction: column;
+  max-width: 900px;
+  margin: 40px auto;
+  padding: 25px;
+  background-color: #1c1c1c;
+  border-radius: 15px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  color: #f0f0f0;
+  font-family: 'Arial', sans-serif;
+}
+
+.eligibility-section {
+  margin-bottom: 35px;
+  padding: 25px;
+  border-radius: 10px;
+  background-color: #222222;
+  transition: all 0.3s ease-in-out;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.eligibility-section:hover {
+  background-color: #7c3d3d;
+  transform: scale(1.05);
+  box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
+}
+
+
+.eligibility-section-header {
+  font-size: 2rem;
+  margin-bottom: 20px;
+  color: #dcbc1a;
+  font-weight: bold;
+  border-bottom: 3px solid #ffcc00;
+  padding-bottom: 12px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+
+.eligibility-requirement-list,
+.eligibility-help-list {
+  list-style-type: none; 
+  padding-left: 20px;
+  margin-bottom: 20px;
+  display: flex;
+  flex-direction: column;
+}
+
+.eligibility-requirement-list li,
+.eligibility-help-list li {
+  display: flex;
+  align-items: center;
+  position: relative;
+  margin-bottom: 15px;
+  font-size: 1.1rem;
+  line-height: 1.8;
+  color: #ccc;
+  padding-left: 30px;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+  font-weight: 500;
+}
+
+.eligibility-requirement-list li:before,
+.eligibility-help-list li:before {
+  content: "•";
+  font-size: 1.6rem;
+  color: #dcbc1a;
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.eligibility-requirement-list li:hover,
+.eligibility-help-list li:hover {
+  color: #fff;
+  transform: translateX(10px); 
+  background-color: #7c3d3d;
+  border-radius: 5px;
+  padding-left: 40px; 
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.15); 
+}
+
+.eligibility-requirement-list li {
+  opacity: 0;
+  transform: translateX(-50px);
+  animation: slide-in 0.6s forwards;
+}
+
+.eligibility-requirement-list li:nth-child(1) {
+  animation-delay: 0.1s;
+}
+
+.eligibility-requirement-list li:nth-child(2) {
+  animation-delay: 0.2s;
+}
+
+.eligibility-requirement-list li:nth-child(3) {
+  animation-delay: 0.3s;
+}
+
+@keyframes slide-in {
+  0% {
+    opacity: 0;
+    transform: translateX(-50px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+.eligibility-section-paragraph {
+  line-height: 1.8;
+  margin-bottom: 20px;
+  color: #ccc;
+  font-size: 1.1rem;
+  text-align: justify;
+}
+
+.eligibility-section {
+  background: linear-gradient(135deg, #2f2f2f 40%, #3e3e3e 100%);
+}
+
+.eligibility-cta-button {
+  display: inline-block;
+  background-color: #ffcc00;
+  color: #1c1c1c;
+  font-size: 1.2rem;
+  padding: 12px 25px;
+  margin-top: 20px;
+  text-align: center;
+  border-radius: 25px;
+  font-weight: bold;
+  text-transform: uppercase;
+  cursor: pointer;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+.eligibility-cta-button:hover {
+  background-color: #dcbc1a;
+  color: #fff;
+  transform: scale(1.05);
+}
+
+@media (max-width: 768px) {
+  .eligibility-bg-container {
+    padding: 15px;
+    max-width: 100%;
+  }
+
+  .eligibility-section {
+    padding: 15px;
+  }
+
+  .eligibility-section-header {
+    font-size: 1.5rem;
+  }
+
+  .eligibility-requirement-list li,
+  .eligibility-help-list li {
+    font-size: 1rem;
+  }
+
+  .eligibility-cta-button {
+    font-size: 1rem;
+    padding: 10px 20px;
+  }
+}

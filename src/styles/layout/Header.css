@@ -1,0 +1,125 @@
+.bloodBank-itemsr {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%; 
+  height: 100px;
+  padding: 10px;
+  box-sizing: border-box; 
+}
+
+.bloodBank-header-logo {
+  width: 60%;
+  height: auto;
+  max-width: 400px;
+  transition: transform 0.3s ease, filter 0.3s ease;
+  filter: grayscale(0%); 
+}
+
+.bloodBank-header-logo:hover {
+  transform: scale(1.1);
+  filter: grayscale(20%); 
+}
+
+.bloodBank-header-nav {
+  background-color: darkred;
+  display: flex;
+  margin-top: 10px;
+  align-items: center;
+  justify-content: space-evenly; 
+  padding: 10px 0;
+  box-sizing: border-box;
+}
+
+.bloodBank-header-item {
+  position: relative;
+  color: white;
+  background-color: rgb(136, 8, 8);
+  padding: 15px 20px; 
+  margin: 0 10px;
+  border-radius: 5px;
+  transition: background-color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
+  z-index: 100;
+  cursor: pointer;
+}
+
+.bloodBank-header-item:hover {
+  background-color: rgb(44, 42, 42);
+  transform: scale(1.05);
+  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.3); 
+}
+
+.bloodBank-header-hover-text {
+  position: absolute;
+  background-color: rgb(32, 30, 30);
+  color: white;
+  padding: 10px;
+  border-radius: 5px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+  width: 80%;
+  display: none;
+  transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+.bloodBank-header-item:hover .bloodBank-header-hover-text {
+  display: block;
+  opacity: 1;
+  transform: translateY(10px); 
+}
+
+a {
+  color: white;
+  text-decoration: none;
+  position: relative;
+  transition: color 0.3s ease; 
+}
+
+a:hover {
+  color: rgb(255, 255, 255);
+}
+
+a:after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0);
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: rgb(251, 24, 24);
+  transform-origin: bottom right;
+  transition: transform 0.5s ease-out;
+}
+
+a:hover:after {
+  transform: scaleX(1);
+  transform-origin: bottom left;
+}
+
+
+@media (max-width: 768px) {
+  .bloodBank-header-heading {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .bloodBank-header-nav {
+    flex-direction: column;
+    width: 100%;
+    box-shadow: black;
+  }
+
+  .bloodBank-header-item {
+    width: 100%;
+    text-align: center;
+    margin: 5px 0;
+    padding: 10px 15px; 
+   
+  }
+
+  .bloodBank-header-hover-text {
+    width: 100%;
+    font-size: 0.9rem;
+    padding: 8px;
+  }
+}
