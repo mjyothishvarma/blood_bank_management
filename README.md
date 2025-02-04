@@ -1,70 +1,49 @@
-# Getting Started with Create React App
+# Blood Bank Management Website
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Project Overview
 
-## Available Scripts
+### Brief Description
 
-In the project directory, you can run:
+The Blood Bank Management Website is designed to streamline the process of managing donors, tracking blood inventory, and overseeing employee operations. It features dedicated dashboards for administrators, employees, doctors, and donors, ensuring role-specific functionality and efficient data management.
 
-### `npm start`
+### Key Features
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+- **Donor Registration**: Easy sign-up and management of donor information.
+- **Blood Requests**: Request, track, and manage blood units efficiently.
+- **Appointment Scheduling**: Schedule and manage appointments for blood donations and medical consultations.
+- **Data Visualization**: Graphical representation of inventory levels, appointments, and patient data.
+- **Role-Based Dashboards**: Customized dashboards for Admins, Doctors, Employees, and Donors for a personalized user experience.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+### Tech Stack
 
-### `npm test`
+- **Frontend**: React, HTML, CSS, JavaScript
+- **Backend**: Node.js, Express
+- **Database**: MongoDB
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+### Setup Instructions
 
-### `npm run build`
+1. **Clone the Repository**:
+   git clone https://github.com/mjyothishvarma/blood_bank_management
+2. **Navigate to the Project Directory**:
+3. **Install dependencies**
+4. **Run the Application**
+5. **View in Browser**:
+   Open http://localhost:3000 to view the app.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## User Roles & Permissions
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+### Different User Types:
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+- **Admin**: Full control over the system, including user management, inventory tracking, and report generation.
+- **Doctors**: Access to patient data, manage appointments, and view blood inventory relevant to their department.
+- **Employees**: Manage donor information, handle blood requests, and schedule appointments.
+- **Donors**: Register, view their donation history, and book appointments.
 
-### `npm run eject`
+## Data Handling
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+### Reports & Dashboards:
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+- **Inventory Dashboard**: Real-time tracking of blood stock levels by type and availability.
+- **Schedule Dashboard**: Upcoming appointments with details for easy management.
+- **Doctor Dashboard**: Patient count per doctor with appointment schedules.
+- **Generic Analytics**: Visual insights into donation trends, usage statistics, and more.
